@@ -1,0 +1,13 @@
+[Unit]
+Description=Setup Sit1
+After=multi-user.target
+
+[Service]
+User=root
+ExecStart=/bin/bash /root/dl/v4tov6/up.sh
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+
